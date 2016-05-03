@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Demo</h1>
+
+<script>
+
+var hwString = "Hello,world!";
+
+var array = hwString.split(",");
+
+console.log(array[0], ", ", array[1]);
+
+for (index in array) {
+	
+	if(array[index].indexOf("r") > 0){
+		continue;
+	}
+
+	console.log(array[index]);
+}
+
+</script>
+
+</body>
+</html>
